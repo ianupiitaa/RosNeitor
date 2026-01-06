@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Terreneitor</class>
+ <widget class="QWidget" name="Terreneitor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Terreneitor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icono.jpg</normaloff>icono.jpg</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_3">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <widget class="QLabel" name="rutina_juego">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>331</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Stencil</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnadelante">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>90</y>
+            <width>71</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btnadelante {
+    border-image: url(:/Flechas/arriba.jpg) 0 0 0 0 stretch stretch;
+    background-color: transparent; 
+    border: none; 
+	border-radius: 30px;
+}
+QPushButton#btnadelante:pressed {
+    border-image: url(:/Flechas/arriba.jpg) 0 0 0 0 stretch stretch; /
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+          <property name="shortcut">
+           <string>W</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnderecha">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>160</y>
+            <width>71</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btnderecha {
+    border-image: url(:/Flechas/derecha.jpg) 0 0 0 0 stretch stretch;
+    background-color: transparent; 
+    border: none; 
+	border-radius: 30px;
+}
+QPushButton#btnderecha:pressed {
+    border-image: url(:/Flechas/derecha.jpg) 0 0 0 0 stretch stretch; /
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+          <property name="shortcut">
+           <string>D</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnizquierda">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>160</y>
+            <width>71</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btnizquierda {
+    border-image: url(:/Flechas/izquierda.jpg) 0 0 0 0 stretch stretch;
+    background-color: transparent; 
+    border: none; 
+	border-radius: 30px;
+}
+QPushButton#btnizquierda:pressed {
+    border-image: url(:/Flechas/izquierda.jpg) 0 0 0 0 stretch stretch; /
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+          <property name="shortcut">
+           <string>A</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnatras">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>230</y>
+            <width>71</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btnatras {
+    border-image: url(:/Flechas/abajo.jpg) 0 0 0 0 stretch stretch;
+    background-color: transparent; 
+    border: none; 
+	border-radius: 30px;
+}
+QPushButton#btnatras:pressed {
+    border-image: url(:/Flechas/abajo.jpg) 0 0 0 0 stretch stretch; /
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+          <property name="shortcut">
+           <string>S</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pausarRutina">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>150</y>
+            <width>91</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estilo para la ventana principal (el fondo) */
+#ventanaPrincipal {
+    background-image: url(tu_imagen_fondo_negro.jpg); /* Asegúrate de usar la nueva imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo para TODOS los QPushButton */
+QPushButton {
+    width: 100px;
+    height: 54px;
+    font-size: 16px; /* Un poco más pequeño para un look más serio */
+    font-weight: bold;
+    color: #E0E0E0; /* Texto blanco grisáceo para un look sutil */
+    background-color: rgba(30, 30, 30, 0.7); /* Fondo gris oscuro semi-transparente */
+    border: 1px solid #707070; /* Borde gris sutil */
+    border-radius: 5px; /* Bordes ligeramente redondeados, más cuadrados */
+    padding: 0px;
+    
+ 
+}
+
+/* Efecto al pasar el mouse por encima */
+QPushButton:hover {
+    color: #FFFFFF; /* Texto blanco puro */
+    background-color: rgba(50, 50, 50, 0.8); /* Fondo un poco más claro y opaco */
+    border: 1px solid #AAAAAA; /* Borde más claro */
+
+}
+
+/* Efecto al presionar el botón */
+QPushButton:pressed {
+    color: #DDDDDD;
+    background-color: rgba(20, 20, 20, 0.9); /* Más oscuro y opaco para simular &quot;hundimiento&quot; */
+    border: 1px solid #505050;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Pausar</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="finalizarRutina">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>150</y>
+            <width>91</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estilo para la ventana principal (el fondo) */
+#ventanaPrincipal {
+    background-image: url(tu_imagen_fondo_negro.jpg); /* Asegúrate de usar la nueva imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo para TODOS los QPushButton */
+QPushButton {
+    width: 100px;
+    height: 54px;
+    font-size: 16px; /* Un poco más pequeño para un look más serio */
+    font-weight: bold;
+    color: #E0E0E0; /* Texto blanco grisáceo para un look sutil */
+    background-color: rgba(30, 30, 30, 0.7); /* Fondo gris oscuro semi-transparente */
+    border: 1px solid #707070; /* Borde gris sutil */
+    border-radius: 5px; /* Bordes ligeramente redondeados, más cuadrados */
+    padding: 0px;
+    
+
+}
+
+/* Efecto al pasar el mouse por encima */
+QPushButton:hover {
+    color: #FFFFFF; /* Texto blanco puro */
+    background-color: rgba(50, 50, 50, 0.8); /* Fondo un poco más claro y opaco */
+    border: 1px solid #AAAAAA; /* Borde más claro */
+
+}
+
+/* Efecto al presionar el botón */
+QPushButton:pressed {
+    color: #DDDDDD;
+    background-color: rgba(20, 20, 20, 0.9); /* Más oscuro y opaco para simular &quot;hundimiento&quot; */
+    border: 1px solid #505050;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Finalizar</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="AjustarVelocidad">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>18</width>
+            <height>160</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>60</y>
+            <width>161</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>BBH Sans Bogle</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Esc para abrir menu</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>-260</x>
+            <y>-70</y>
+            <width>711</width>
+            <height>491</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>fondoventana.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <zorder>label_4</zorder>
+         <zorder>rutina_juego</zorder>
+         <zorder>btnderecha</zorder>
+         <zorder>btnizquierda</zorder>
+         <zorder>btnatras</zorder>
+         <zorder>pausarRutina</zorder>
+         <zorder>AjustarVelocidad</zorder>
+         <zorder>label_3</zorder>
+         <zorder>finalizarRutina</zorder>
+         <zorder>btnadelante</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>30</y>
+            <width>131</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>BBH Sans Bogle</family>
+            <pointsize>48</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Pausa</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>105</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>BBH Sans Bogle</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Volumen</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="Volumen">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>140</y>
+            <width>160</width>
+            <height>18</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estilo para el QSlider (horizontal) */
+
+QSlider::groove:horizontal {
+    background-color: rgba(30, 30, 30, 0.7); /* Fondo oscuro como los botones */
+    border: 1px solid #505050; /* Borde oscuro */
+    height: 8px; /* Altura del canal */
+    border-radius: 4px;
+    
+
+}
+
+/* Estilo para la parte &quot;rellena&quot; del slider (lo que ya pasó) */
+QSlider::sub-page:horizontal {
+    background-color: #AAAAAA; /* Gris claro sólido para el progreso */
+    border: 1px solid #505050;
+    height: 8px;
+    border-radius: 4px;
+}
+
+/* Estilo para el &quot;mango&quot; o &quot;perilla&quot; que se arrastra */
+QSlider::handle:horizontal {
+    background-color: #E0E0E0; /* Color principal (como el texto del label) */
+    border: 1px solid #707070; /* Borde gris medio */
+    width: 18px; /* Ancho del mango */
+    height: 18px; /* Alto del mango */
+    border-radius: 9px; /* Esto lo hace un círculo perfecto */
+    
+    /* Margen negativo para que el mango se superponga al canal */
+    /* (Alto del mango - Alto del canal) / 2 = (18 - 8) / 2 = 5 */
+    margin: -5px 0; 
+}
+
+/* Efecto al pasar el mouse por encima del mango */
+QSlider::handle:horizontal:hover {
+    background-color: #FFFFFF; /* Blanco puro */
+    border: 1px solid #AAAAAA; /* Borde más claro */
+
+}
+
+/* Efecto al presionar el mango */
+QSlider::handle:horizontal:pressed {
+    background-color: #D0D0D0; /* Un gris un poco más oscuro */
+    border: 1px solid #505050;
+
+}</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnvolverjuego">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>190</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estilo para la ventana principal (el fondo) */
+#ventanaPrincipal {
+    background-image: url(tu_imagen_fondo_negro.jpg); /* Asegúrate de usar la nueva imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo para TODOS los QPushButton */
+QPushButton {
+    width: 100px;
+    height: 54px;
+    font-size: 16px; /* Un poco más pequeño para un look más serio */
+    font-weight: bold;
+    color: #E0E0E0; /* Texto blanco grisáceo para un look sutil */
+    background-color: rgba(30, 30, 30, 0.7); /* Fondo gris oscuro semi-transparente */
+    border: 1px solid #707070; /* Borde gris sutil */
+    border-radius: 5px; /* Bordes ligeramente redondeados, más cuadrados */
+    padding: 0px;
+    
+
+}
+
+/* Efecto al pasar el mouse por encima */
+QPushButton:hover {
+    color: #FFFFFF; /* Texto blanco puro */
+    background-color: rgba(50, 50, 50, 0.8); /* Fondo un poco más claro y opaco */
+    border: 1px solid #AAAAAA; /* Borde más claro */
+
+}
+
+/* Efecto al presionar el botón */
+QPushButton:pressed {
+    color: #DDDDDD;
+    background-color: rgba(20, 20, 20, 0.9); /* Más oscuro y opaco para simular &quot;hundimiento&quot; */
+    border: 1px solid #505050;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>Volver al Juego</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnvolvermenu">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>230</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Estilo para la ventana principal (el fondo) */
+#ventanaPrincipal {
+    background-image: url(tu_imagen_fondo_negro.jpg); /* Asegúrate de usar la nueva imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo para TODOS los QPushButton */
+QPushButton {
+    width: 100px;
+    height: 54px;
+    font-size: 16px; /* Un poco más pequeño para un look más serio */
+    font-weight: bold;
+    color: #E0E0E0; /* Texto blanco grisáceo para un look sutil */
+    background-color: rgba(30, 30, 30, 0.7); /* Fondo gris oscuro semi-transparente */
+    border: 1px solid #707070; /* Borde gris sutil */
+    border-radius: 5px; /* Bordes ligeramente redondeados, más cuadrados */
+    padding: 0px;
+    
+
+}
+
+/* Efecto al pasar el mouse por encima */
+QPushButton:hover {
+    color: #FFFFFF; /* Texto blanco puro */
+    background-color: rgba(50, 50, 50, 0.8); /* Fondo un poco más claro y opaco */
+    border: 1px solid #AAAAAA; /* Borde más claro */
+
+}
+
+/* Efecto al presionar el botón */
+QPushButton:pressed {
+    color: #DDDDDD;
+    background-color: rgba(20, 20, 20, 0.9); /* Más oscuro y opaco para simular &quot;hundimiento&quot; */
+    border: 1px solid #505050;
+ 
+}</string>
+          </property>
+          <property name="text">
+           <string>Volver al Menu</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>-190</x>
+            <y>-100</y>
+            <width>601</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>fondoventana.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <zorder>label_5</zorder>
+         <zorder>label</zorder>
+         <zorder>label_2</zorder>
+         <zorder>Volumen</zorder>
+         <zorder>btnvolverjuego</zorder>
+         <zorder>btnvolvermenu</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="recursos_imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

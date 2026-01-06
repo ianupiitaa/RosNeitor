@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Flechas">
+    <file>arriba.jpg</file>
+    <file>izquierda.jpg</file>
+    <file>derecha.jpg</file>
+    <file>abajo.jpg</file>
+  </qresource>
+</RCC>
